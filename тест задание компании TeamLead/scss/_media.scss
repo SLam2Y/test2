@@ -1,0 +1,63 @@
+$desctop-above: 1193px;
+$desctop: 1192px;
+
+$tablet-above: 1024px;
+$tablet: 1023px;
+
+$mobile-above: 768px;
+$mobile: 767px;
+
+@mixin desctop-above{
+    @media(min-width: $desctop-above){
+        @content;
+    }
+
+}
+
+@mixin desctop{
+    @media(max-width: $desctop){
+        @content;
+    }
+
+}
+
+@mixin tablet-above{
+    @media(min-width: $tablet-above){
+        @content;
+    }
+
+}
+
+@mixin tablet{
+    @media(max-width: $tablet){
+        @content;
+    }
+
+}
+
+@mixin mobile-above{
+    @media(min-width: $mobile-above){
+        @content;
+    }
+
+}
+
+@mixin mobile{
+    @media(max-width: $mobile){
+        @content;
+    }
+
+}
+
+@mixin hover{//для того что бы на теле при клике не оставался цвет после нажатия
+    @media (hover: hover){
+        &:hover {
+            @content;
+        }
+    }
+    @media (hover: none){
+        &:active{
+            @content;
+        }
+    }
+}
