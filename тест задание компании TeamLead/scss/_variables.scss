@@ -1,0 +1,32 @@
+:root{
+    
+
+    
+    
+
+    --border-radius-large: 50px;
+    --border-radius-small: 10px;
+
+    --shadow-large: 4px 4px 20px 0px #00000040;
+    --shadow-small: 2px 5px 12px 0px #00000026;
+
+    --font-family-base: 'Roboto' , sans-serif;
+
+    --container-width: 1192px;
+    --container-padding-x: 29px;
+
+    --section-padding-y: 70px;
+
+    --button-hight: 38px;
+
+    --transition-duration: 0,2s;
+
+    @include desctop{
+        --section-padding-y: 0px;
+    }
+
+
+    @include mobile{
+        --section-padding-y: 30px;
+    }
+}

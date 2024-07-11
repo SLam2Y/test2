@@ -1,0 +1,115 @@
+.section5{
+    padding-top: 50px;
+    background-color: black;
+    .section5_inner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .hint {
+            display: none;
+            position: absolute;
+            top: -20px;
+            right: 0;
+            font-size: 0.8em;
+            color: grey;
+            background: white;
+            padding: 2px 5px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+        
+        .field {
+            position: relative;
+        }
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 60px;
+        border: 1px solid white;
+        color: white;
+        font-size: 56px;
+        font-weight: bold;
+        padding: 15px  ;
+        transition: background-color 1s;
+        @include hover{
+            background-color: palevioletred;
+            color: black;
+        }
+        @include tablet{
+            width: 200px;
+            height: 60px;
+            font-size: 46px;
+            font-weight: bold;
+        }
+        @include mobile{
+            width: 160px;
+            height: 40px;
+            font-size: 36px;
+            font-weight: normal;
+        }
+    }
+    .leftFooterBlock{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .contact_us__button{
+            border: 1px solid wheat;
+            background-color: pink;
+            border-radius: 5px;
+            width: 250px;
+            height: 50px;
+        }
+        .contact_us__body{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        .field_input{
+            border: 1px solid wheat;
+            background-color: white;
+            border-radius: 5px;
+            width: 250px;
+            height: 50px;
+        }
+
+
+    }
+    .riteFooterBlock{
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        .timer {
+            font-size: 2em;
+            font-weight: bold;
+            color: white;
+        }
+        .contForTime{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+            .conteinerforPRICE{
+
+                .price{
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: white;
+                    text-decoration: line-through solid red;
+                }
+                .price2{
+                    font-weight: bold;
+                    font-size: 28px;
+                    color: red;
+                }
+            }
+            
+        
+        
+    }
+}
